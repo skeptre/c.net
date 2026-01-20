@@ -4,9 +4,9 @@ public static class ExpenseService
 {
     private static List<Expense> _expenses = new();
 
-    public static void AddExpense(string t, string c,string d, decimal a, DateTime date)
+    public static void AddExpense(string title, string category, string description, decimal amount)
     {
-        _expenses.Add(new Expense(t, c, d, a, date));
+        _expenses.Add(new Expense(title, category, description, amount, DateTime.Now));
     }
 
     public static decimal GetTotal() => _expenses.Sum(x => x.Amount);

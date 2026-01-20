@@ -1,0 +1,21 @@
+# === .NET Core / C# Specific ===
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.user
+*.suo
+*.cache
+*.log
+
+# === Visual Studio Code ===
+.vscode/
+
+# === Mac Specific ===
+.DS_Store
+
+# === Temporary/User Specific ===
+*.user
+*.userosscache
+*.sln.docstates
